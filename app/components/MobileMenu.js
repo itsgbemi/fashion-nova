@@ -14,7 +14,7 @@ return(
 <ul className="space-y-4">
 {items.map((item)=>(
 <li key={item}>
-<a className="block py-2 text-lg uppercase border-b border-gray-100 hover:text-#a6363a">
+<a className="block py-2 text-lg uppercase border-b border-gray-100 hover:text-[#a6363a]">
 {item}
 </a>
 </li>
