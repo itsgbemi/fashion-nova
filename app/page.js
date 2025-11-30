@@ -53,7 +53,7 @@ className="w-full h-auto object-contain lg:hidden"
 </section>
 
 <section>
-<div className="max-w-7xl mx-auto px-4">
+<div className="w-full">
 <div className="grid grid-cols-2 lg:grid-cols-4 gap-px">
 {categories.map((category, index) => (
 <Link key={index} href={category.link} className="block group">
@@ -61,7 +61,7 @@ className="w-full h-auto object-contain lg:hidden"
 <img 
 src={category.image} 
 alt={category.title}
-className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
 />
 </div>
 </Link>
