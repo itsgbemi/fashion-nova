@@ -15,7 +15,7 @@ return(
 <img src="https://res.cloudinary.com/dqhawdcol/image/upload/v1764186999/gwrlckovluhlu5rjxsik.svg" alt="Fashion Nova" className="h-8"/>
 <nav className="utility-nav hidden md:flex space-x-6">
 {['WOMEN','PLUS+CURVE','MEN','KIDS','BEAUTY'].map((item)=>(
-<a key={item} className="font-bold text-sm uppercase hover:text-#a6363a">{item}</a>
+<a key={item} className="font-bold text-sm uppercase hover:text-[#a6363a]">{item}</a>
 ))}
 </nav>
 </div>
@@ -48,7 +48,7 @@ return(
 <div className="mobile-utility-nav md:hidden border-t border-gray-200">
 <nav className="flex overflow-x-auto space-x-6 px-4 py-2">
 {['WOMEN','PLUS+CURVE','MEN','KIDS','BEAUTY'].map((item)=>(
-<a key={item} className="font-bold text-xs uppercase whitespace-nowrap">{item}</a>
+<a key={item} className="font-bold text-xs uppercase whitespace-nowrap hover:text-[#a6363a]">{item}</a>
 ))}
 </nav>
 </div>
@@ -56,7 +56,7 @@ return(
 <div className="main-nav">
 <nav className="max-w-7xl mx-auto px-4 py-3 hidden md:flex overflow-x-auto space-x-8">
 {mainNavItems.map((item,index)=>(
-<a key={item} className={`nav-item whitespace-nowrap text-sm uppercase ${index===0?'active':''} hover:text-#a6363a`}>
+<a key={item} className={`nav-item whitespace-nowrap text-sm uppercase ${index===0?'active':''} hover:text-[#a6363a]`}>
 {item}
 </a>
 ))}
