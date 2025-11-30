@@ -57,11 +57,11 @@ className="w-full h-auto object-contain lg:hidden"
 <div className="grid grid-cols-2 lg:grid-cols-4 gap-px">
 {categories.map((category, index) => (
 <Link key={index} href={category.link} className="block group">
-<div className="aspect-[4/3] overflow-hidden">
+<div className="aspect-[9/16] overflow-hidden">
 <img 
 src={category.image} 
 alt={category.title}
-className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
 />
 </div>
 </Link>
