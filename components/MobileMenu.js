@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function MobileMenu({ isOpen, onClose, mainNav }) {
 return (
 <div className={`fixed inset-0 z-50 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 lg:hidden`}>
@@ -11,13 +13,14 @@ return (
 </div>
 <nav className="p-4">
 {mainNav.map((item) => (
-<a 
-key={item}
-href="#" 
+<Link 
+key={item.name}
+href={item.href} 
 className="block py-3 text-sm font-medium uppercase border-b border-gray-200"
+onClick={onClose}
 >
-{item}
-</a>
+{item.name}
+</Link>
 ))}
 </nav>
 </div>
