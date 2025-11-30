@@ -52,9 +52,9 @@ className="w-full h-auto object-contain lg:hidden"
 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 </section>
 
-<section className="py-8">
+<section className="py-2">
 <div className="w-full">
-<div className="grid grid-cols-2 lg:grid-cols-4 gap-px">
+<div className="grid grid-cols-2 lg:grid-cols-4 gap-1">
 {categories.map((category, index) => (
 <Link key={index} href={category.link} className="block group">
 <div className="aspect-[9/16] overflow-hidden">
